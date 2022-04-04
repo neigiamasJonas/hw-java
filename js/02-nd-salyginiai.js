@@ -5,7 +5,7 @@
 const n = 20;
 console.log(n);
 
-if (n > 0) {
+if (n >= 0) {
     console.log('Geras');
 } else {
     console.log('Blogas');
@@ -128,5 +128,22 @@ if (liekana === 0) {
     console.log('Metai neolimpiniai');
 }
 
+// 10 //
 
+const v1 = 8;       // laikrodis rodo 'valandu'
+const m1 = 29;       // laikrodis rodo 'minuciu'
+const m2 = 23;       // kelione trunka 'minuciu'
+const v = 9;        // pamoka prasideda 'valandu'
+const m = 5;        // pamoka prasideda 'minuciu'
 
+// parasyti programa ar petras nepaveluos i pamoka prasidedancia v 'valandu ir m 'minuciu
+
+const laikrodisRodo = v1 * 60 + m1;
+const pamokuPradzia = v * 60 + m;
+const kelioneTrunka = laikrodisRodo + m2;
+
+if (kelioneTrunka <= pamokuPradzia) {
+    console.log('Petras i pamoka nepaveluos');
+}   else if (kelioneTrunka > pamokuPradzia) {       // galima naudoti tik "else"
+    console.log('Petras i pamoka paveluos');
+}

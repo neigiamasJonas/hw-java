@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "nd1": "nodemon ./js/01-nd.js",
-    "nd2": "nodemon ./js/02-nd.js",
+    "nd2": "nodemon ./js/02-nd-salyginiai.js",
+    "nd3": "nodemon ./js/03-nd-ciklai.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
