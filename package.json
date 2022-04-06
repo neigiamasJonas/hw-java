@@ -9,6 +9,7 @@
     "nd3": "nodemon ./js/03-nd-ciklai.js",
     "nd4": "nodemon ./js/04-nd-funkcijos.js",
     "nd5": "nodemon ./js/05-nd-salyginiai-ciklai.js",
+    "nd6": "nodemon ./js/06-nd-salyginiai-funkcijos.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

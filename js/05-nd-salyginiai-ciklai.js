@@ -110,4 +110,3 @@ for (a = 0; a <= 2022; a++) {
     }
 }
 
-// cia neesu tikras ar taip supratau uzduoti
