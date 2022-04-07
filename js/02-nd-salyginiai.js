@@ -2,7 +2,7 @@
 
 // 1 //
 
-const n = 20;
+const n = -2;
 console.log(n);
 
 if (n >= 0) {
@@ -63,7 +63,7 @@ console.log('-------------------------------------');
 const c = 73;                     // centai //
 const p = 20;                     // viena porcija //
 const kk = Math.floor(c / p);
-const graza = (c - kk*p);
+const graza = (c - kk*p);  // (c % p)
 
 console.log(`Saulius nusipirks ${kk} porcijas ir jam liks ${graza} centu`);
 

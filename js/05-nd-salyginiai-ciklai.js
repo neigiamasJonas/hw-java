@@ -9,28 +9,22 @@ console.log('--------------------------');
 
 // 2 // naudojant cikla penkiose eilutese atspausdinti skaicius 0 1 2 3 4 (vienas skaicius vienoje eiluteje)
 
-const skaiciai = [0, 1, 2, 3, 4];
-
-for (a = 0; a < skaiciai.length; a++) {
-    console.log(skaiciai[a]);
+for (a = 0; a < 5; a++) {
+    console.log(a);
 }
 console.log('--------------------------');
 
 // 3 // naudojant cikla penkiose eilutese atspausdinti skaicius 0 10 20 30 40 (vienas skaicius vienoje eiluteje)
 
-const skaiciai2 = [0, 10, 20, 30, 40]
-
-for (a = 0; a < skaiciai2.length; a++) {
-    console.log(skaiciai2[a]);
+for (a = 0; a < 5; a++) {
+    console.log(a * 10);
 }
 console.log('--------------------------');
 
 // 4 //  naudojant cikla penkiose eilutese atspausdinti skaicius 49 50 51 52 53 (vienas skaicius vienoje eiluteje)
 
-const skaiciai3 = [49, 50, 51, 52, 53]
-
-for (a = 0; a < skaiciai3.length; a++) {
-    console.log(skaiciai3[a]);
+for (a = 49; a < 54; a++) {
+    console.log(a);
 }
 console.log('--------------------------');
 
@@ -69,7 +63,7 @@ console.log('--------------------------');
 const skaicius = 5;
 
 for (let a = 1; a <=10; a++) {
-    daugyba = skaicius * [a];
+    daugyba = skaicius * a;
     console.log(daugyba);
 }
 console.log('--------------------------');
@@ -79,30 +73,32 @@ console.log('--------------------------');
 const n = 5;
 
 for (let a = 1; a <= n; a++) {
-    colis = 2.54*[a];
+    colis = 2.54 * a;
     console.log(`${a} coliu sudaro ${colis} centimetrai`);
 }
 console.log('--------------------------');
 
 // 9 // bankas moka 2% palukanu. idejo 100e. sudaryti kasmetine ataskaita iki n metu (metai/palukanos/indelis)
 
-const metai = 5;
+const metai = 4;
+
 const palukanos = 0.02;
 const indelis = 100;
 
-let gausiu = 0;
+let dabarTuriu = indelis;
+
 
 for (a = 1; a <= metai; a++) {
-    gausiu = gausiu + (indelis * palukanos);
-    dabarTuriu = indelis + gausiu;
-    
-    console.log(`Po ${a} metu gausiu ${gausiu} euru palukanu ir turesiu ${dabarTuriu} euru`);
+    palu = dabarTuriu * palukanos;
+    dabarTuriu += dabarTuriu * palukanos;
+   
+    console.log(`Po ${a} metu gausiu ${palu.toFixed(2)} euru palukanu ir turesiu ${dabarTuriu.toFixed(2)} euru`);
 }
-// uzdavini naudojau paprastasias palukanas. bandziau su sudetinem, bet deja nesugalvojau
+
 
 console.log('--------------------------');
 
-// 10 // keliamieji metai turi 366, paprastieji 365.
+10 // keliamieji metai turi 366, paprastieji 365.
 
 for (a = 0; a <= 2022; a++) {
     if ((a % 4 === 0 && a % 100 !== 0) || (a % 400 === 0)){
